@@ -1,0 +1,203 @@
+/* Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+body { background: white; color: #444; line-height: 1.4em; }
+
+
+button {
+  font: 12px Arial;
+  background-color: #666;
+  color: #fff;
+  text-shadow: 0 -1px 1px #222;
+  padding: 6px 10px 6px 10px;
+  border: 0;
+  border-bottom: 1px solid #222;
+  min-width: 80px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px #999;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px #999;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+/* level-1 */
+.chart {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+/* level-2 */
+.gantt-chart {
+	font-family: Arial, sans-serif;
+	font-size: 9px;
+}
+/* connect level-2 and level-3(1). Without this, level-3 is ignored, and level-2 is picked */
+.gantt-chart .x-axis-chart2 {
+	font-family: Arial, sans-serif;
+	font-size: 9px;
+        font-weight: normal;
+        color: #f6483f ;
+}
+
+/* level-3(1) for X axis date */
+.x-axis-chart2 text{
+        font-size: 14px;
+        font-weight: bold;
+	color: red;
+
+        //alignment-adjust: before-edge;
+        //text-align: right;
+        //text-anchor: right;
+}
+
+/* connect level-2 and level-3(2). Without this, level-3 is ignored, and level-2 is picked */
+.gantt-chart .x-axis-chart {
+	font-family: Arial, sans-serif;
+	font-size: 9px;
+}
+
+/* level-3(2) for X axis time interval */
+.x-axis-chart text{
+        font-size: 9px;
+	color: rgb(255, 135, 0) !important;
+}
+/*
+.x-axis-chart2 .x-axis-chart2 .x-axis-chart2{
+        font-size: 14px;
+	color:blue;
+}
+.xaxis {
+	font-size: 15px;
+}
+*/
+
+.FltLable {
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	color: red;
+}
+
+
+.axis path,.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+    opacity: 0.1;
+}
+
+/* blue */
+.bar {
+	fill: #98bdd8;
+}
+/* red */
+.bar-DLY {
+	fill: #f6483f;
+}
+/* green */
+.bar-ENRT {
+	fill: #98bdd8;
+}
+/* blue */
+.bar-PDEP {
+	fill: #98bdd8;
+}
+/* orange */
+.bar-ARVD {
+	fill: #98bdd8;
+}
+.bar-MAINT {
+	fill: #bfebec;
+}
+.bar-m1 {
+	fill: #719dea;
+}
+.bar-m2 {
+	fill: #719dea;
+}
+.bar-m3 {
+	fill: #719dea;
+}
+.bar-m4 {
+	fill: #319161;
+}
+.bar-m5 {
+	fill: #719dea;
+}
+.bar-m6 {
+	fill: #719dea;
+}
+.bar-m7 {
+	fill: #bfebec;
+}
+.bar-m8 {
+	fill: #69e6ea;
+}
+.bar-m9 {
+	fill: #c7e1db;
+}
+.bar-m10 {
+	fill: #c7d2e1;
+}
+.bar-defMaint {
+	fill: #719dea;
+}
+.bar-groundtime {
+	fill: #38f445;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+
+#tag {
+  color: white;
+  background: #FA283D;
+  width: 150px;
+  position: absolute;
+  display: none;
+  padding:3px 6px;
+  margin-left: -80px;
+  font-size: 11px;
+}
+
+
+
+#tag:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+  border-width: 10px;
+  border-bottom-color: #FA283D;
+  top: -20px;
+}
